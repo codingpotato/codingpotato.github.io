@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Introduction - Dynamic Art Lite for iOS</title>
+  <link href="css/local.css" rel="stylesheet" type="text/css" />
+  <link href="css/blocks.css" rel="stylesheet" type="text/css" />
+  <script>
+    function code(id_number) {
+      if (document.getElementById(id_number + "_button_code").innerHTML == "Show Code") {
+        document.getElementById(id_number + "_button_code").innerHTML = "Hide Code";
+        document.getElementById(id_number + "_code").className = "code";
+      } else {
+        document.getElementById(id_number + "_button_code").innerHTML = "Show Code";
+        document.getElementById(id_number + "_code").className = "code hidden";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <iframe id="download" name="download"></iframe>
+  <div id="container">
+    <div id="main">
+      <div id="content">
+        <h1>Introduction</h1>
+
+        <div class="subtitle"><a href="#">Back to Top</a><a id="introduction"></a>
+          <h2>Introduction</h2>
+        </div>
+        <p> <strong>Dynamic ART Lite is a graphical programming environment on iPad.</strong> It's easy to create
+          amazing artwork and animations with Dynamic ART Lite. <br />
+          If you buy <strong>the full version</strong> on App Store, you will be able to analyze interactions and write
+          music. You can also share your creations with your friends with the full version. <br />
+          You don't need to study complex syntax of computer languages. You just drag and drop a set of blocks and
+          connect them together. It will be a fun way to build your own programs. <br />
+          It can be used for beginners to learn and practice mathematical, computational ideas and creative thinking.
+        </p>
+        <div class="subtitle"><a href="#">Back to Top</a><a id="features"></a>
+          <h2>Features</h2>
+        </div>
+        <ol>
+          <li>
+            <strong>Graphical programming</strong> by dragging and dropping.
+          </li>
+          <li>
+            <strong>Program executing flow</strong> control.
+          </li>
+          <li>
+            <strong>Arithmetic operations</strong>, simple <strong>math functions</strong> (abs, sqrt, sin, cos, tan,
+            asin, acos, atan, ln, log, round, floor, ceil, etc.).
+          </li>
+          <li>
+            <strong>Turtle drawing</strong> similar to <em>Logo Language</em>.
+          </li>
+          <li>
+            <strong>Basic 2-D sketching</strong> (points, lines, rectangles and ellipses).
+          </li>
+          <li>
+            <strong>RGBA</strong> and <strong>HSBA</strong> color palette.
+          </li>
+          <li>
+            More detailed images on <strong>Retina iPad</strong> (<em>2048*1536</em>).
+          </li>
+        </ol>
+        <div class="subtitle"><a href="#">Back to Top</a><a id="more"></a>
+          <h2>More Features in Full Version</h2>
+        </div>
+        <p> The following features are not included in <strong>Dynamic ART Lite</strong>. If you are interested, please
+          <strong>buy Dynamic ART</strong> on app store. </p>
+        <ol>
+          <li>
+            <strong>Multi-programs</strong> management.
+          </li>
+          <li>
+            <strong>Sub-block-sequence</strong> reuse.
+          </li>
+          <li>
+            <strong>List operations</strong>.
+          </li>
+          <li>
+            <strong>Advanced 2-D sketching</strong> (polygons, arcs and Bezier curves).
+          </li>
+          <li>
+            Detect the beginning, movement and ending of <strong>user touch</strong>.
+          </li>
+          <li>
+            Play <strong>sound and music</strong>.
+          </li>
+        </ol>
+        <div class="subtitle"><a href="#">Back to Top</a><a id="example"></a>
+          <h2>Example</h2>
+        </div>
+        <p> You can try some examples first. Please click button "Open in Dynamic ART Lite" to import the first example.
+        </p>
+        <div class="example_box"><img src="images/examples/17.png" />
+          <div class="intro">
+            <h1>Sun</h1>
+            <p> A <strong>sun</strong> rises on your screen, made of beautiful, elegant curves. It is red and orange, in
+              order to remind you of the delightful days filled with warm sunshine. </p>
+            <p> <strong>Attractive Point:</strong> Use turtle movement to create trails with <strong>changing width,
+                direction and color</strong>. </p><a class="import" href="examples/17.html"
+              target="download"><button>Open in Dynamic ART Lite</button></a><button id="17_button_code"
+              onClick="code('17')">Show Code</button>
+          </div>
+          <div class="clear"></div>
+          <div id="17_code" class="code hidden"><code><span>---------- Startup ----------</span>
+<span>�Hide </span>
+<span>�Set value of� @home x@� to� $current x$ </span>
+<span>�Set value of� @home y@� to� $current y$ </span>
+<span>�Repeat� 18� times </span>
+<span>���� Pen up </span>
+<span>���� Move to x� $home x$� y� $home y$ </span>
+<span>���� Turn right� 20 </span>
+<span>���� Move forward� 20 </span>
+<span>���� Pen down </span>
+<span>���� Set value of� @line width@� to� 9 </span>
+<span>���� Set value of� @green@� to� -100 </span>
+<span>���� Set value of� @step@� to� [ 255� /� 175 ] </span>
+<span>���� Repeat� 150� times </span>
+<span>�������� Set line width� $line width$ </span>
+<span>�������� Set line color� [ Color of red� 255� green� $green$� blue� 0� Alpha� 255 ] </span>
+<span>�������� Move forward� 1 </span>
+<span>�������� Turn left� 1 </span>
+<span>�������� Set value of� @line width@� to� [ $line width$� -� 0.03 ] </span>
+<span>�������� Set value of� @green@� to� [ $green$� +� $step$ ] </span>
+<span>���� End</span>
+<span>���� Repeat� 150� times </span>
+<span>�������� Set line width� $line width$ </span>
+<span>�������� Set line color� [ Color of red� 255� green� $green$� blue� 0� Alpha� 255 ] </span>
+<span>�������� Move forward� 2 </span>
+<span>�������� Turn right� 1 </span>
+<span>�������� Set value of� @line width@� to� [ $line width$� -� 0.03 ] </span>
+<span>�������� Set value of� @green@� to� [ $green$� +� $step$ ] </span>
+<span>���� End</span>
+<span>�End</span></code></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
